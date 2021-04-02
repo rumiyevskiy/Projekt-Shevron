@@ -1,0 +1,109 @@
+
+body{
+	font: 32px Helvetica, sans-serif;
+	line-height: 37px;
+	text-transform: uppercase;
+	color: #000000;
+}
+
+.nav{
+	background: #000000;
+	margin: 0 0 211px;
+	padding: 2px;
+}
+
+.gradient{
+	background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);
+	}
+
+.nav-list{
+	text-align: right;
+	margin: 0;
+	padding: 0 60px;
+}
+
+.nav-item{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+
+	/*inline-block погрешность 4px с двух сторон!!!*/
+	margin: 0 25px 0 17px;
+
+}
+
+.nav-item a {
+	background: #FFFFFF;
+	color: #000000;
+	text-decoration: none;
+	padding: 30px 25px 29px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+.nav-item a:before{
+	content: "";
+	display: block;
+	vertical-align: top;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 48px 0 48px 25px;
+	border-color: #fff transparent #fff transparent;
+	position: absolute;
+	top: 0;
+	left: -25px;
+	
+}
+
+.nav-item a:after{
+	content: "";
+	display: block;
+	vertical-align: top;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 48px 0 48px 25px;
+	border-color: transparent transparent transparent #fff;
+	position: absolute;
+	right: -25px;
+	top: 0;
+}
+
+.nav-item:hover a:before {
+	
+	border-color: #ccc transparent #ccc transparent;
+	
+}
+
+.nav-item:hover a:after {
+	
+	border-color: transparent transparent transparent #ccc;
+	
+}
+
+.nav-item:hover a {
+	
+	background: #ccc;
+	
+}
+
+.gradient a:hover:before {
+	
+	border-color: rgba(255,255,255,0.7) transparent rgba(255,255,255,0.7) transparent;
+	
+}
+
+.gradient a:hover:after {
+	
+	border-color: transparent transparent transparent rgba(255,255,255,0.7);
+	
+}
+
+.gradient a:hover{
+	
+	background: rgba(255,255,255,0.7);
+	
+}
+
